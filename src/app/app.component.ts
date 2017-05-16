@@ -23,8 +23,4 @@ export class AppComponent {
     this.title = input.value = '';
   }
 
-  doDelete(item) {
-    let idx = this.datasvc.data.indexOf(item);
-    this.datasvc.data.splice(idx, 1);
-  }
 }
