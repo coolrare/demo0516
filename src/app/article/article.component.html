@@ -3,7 +3,7 @@
     <h2 class="post-title"
       [class.highlight]="item.title.indexOf(this.keyword)>=0">
       <a [href]="item.href">{{item.title | uppercase}}</a>
-      -- {{ 12345 | currency:'NTD':true:'1.0-0' }}
+      -- NT$ {{ 12345 | number }}
     </h2>
     <div class="post-info clearfix">
       <span class="post-date"><i class="glyphicon glyphicon-calendar"></i>{{item.date | date:'yyyy-MM-dd'}}</span>
