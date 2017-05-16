@@ -9,7 +9,7 @@
 
         <!-- Article START-->
         <app-article
-          *ngFor="let item of data"
+          *ngFor="let item of datasvc.data"
           [keyword]="title"
           [item]="item" (delete)="doDelete($event)"></app-article>
         <!-- Article END-->
