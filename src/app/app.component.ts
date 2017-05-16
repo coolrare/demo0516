@@ -11,4 +11,8 @@ export class AppComponent {
   doSearch(input: HTMLInputElement) {
     this.title = input.value;
   }
+
+  doClear(input: HTMLInputElement) {
+    this.title = input.value = '';
+  }
 }
