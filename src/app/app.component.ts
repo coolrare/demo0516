@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
 
-  doSearch($event: KeyboardEvent) {
-    console.log($event);
-    this.title = ($event.target as HTMLInputElement).value;
+  doSearch(input: HTMLInputElement) {
+    this.title = input.value;
   }
 }
