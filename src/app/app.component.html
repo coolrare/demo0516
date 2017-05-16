@@ -10,7 +10,7 @@
         <!-- Article START-->
         <app-article
           *ngFor="let item of data"
-          [item]="item"></app-article>
+          [item]="item" (delete)="doDelete($event)"></app-article>
         <!-- Article END-->
 
       </div>
