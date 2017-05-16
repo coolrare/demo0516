@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   sitename = 'My WebSite';
+  siteimage = '/assets/images/logo.png';
 
   constructor() { }
 
