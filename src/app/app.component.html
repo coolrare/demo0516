@@ -75,8 +75,10 @@
         <div class="widget search">
           <div class="widget-content">
             <div id="searchbox">
-              <input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s">
+              <input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s"
+                [(ngModel)]="title">
               <input type="button" value="搜尋" id="searchbutton">
+              {{ title }}
             </div>
           </div>
         </div>
@@ -91,7 +93,7 @@
           <div class="widget-content">
             <div style="text-align: center">
               <div id="calendarContainer">
-                <table class="calendar" summary="" style=";border-collapse:collapse;">
+                <table class="calendar" summary="" style="border-collapse:collapse">
                   <tbody>
                     <tr>
                       <td><a href="#">&lt;&lt;</a>&nbsp;&nbsp;</td>
