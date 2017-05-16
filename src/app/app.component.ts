@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
 
-  doSearch(input: HTMLInputElement) {
-    this.title = input.value;
+  doSearch(str: string) {
+    this.title = str;
   }
 
   doClear(input: HTMLInputElement) {

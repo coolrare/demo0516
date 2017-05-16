@@ -75,13 +75,14 @@
         <div class="widget search">
           <div class="widget-content">
             <div id="searchbox">
-              <input type="text"
+              <input type="text" #tKeyword
                 placeholder="請輸入搜尋關鍵字"
                 accesskey="s"
                 [value]="title"
-                (keyup.enter)="doSearch($event.target)"
-                (keyup.escape)="doClear($event.target)">
-              <input type="button" value="搜尋" id="searchbutton">
+                (keyup.enter)="doSearch(tKeyword.value)"
+                (keyup.escape)="doClear(tKeyword)">
+              <input type="button" value="搜尋" id="searchbutton"
+                (click)="doSearch(tKeyword.value)">
               {{ title }}
             </div>
           </div>
