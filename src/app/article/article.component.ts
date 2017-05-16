@@ -13,6 +13,9 @@ export class ArticleComponent implements OnInit {
   @Output()
   delete = new EventEmitter<any>();
 
+  @Input()
+  keyword: string;
+
   constructor() { }
 
   ngOnInit() {
