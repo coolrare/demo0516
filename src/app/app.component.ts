@@ -10,8 +10,6 @@ export class AppComponent {
 
   doSearch($event: KeyboardEvent) {
     console.log($event);
-    if($event.keyCode == 13) {
-      this.title = ($event.target as HTMLInputElement).value;
-    }
+    this.title = ($event.target as HTMLInputElement).value;
   }
 }
